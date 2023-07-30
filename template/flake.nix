@@ -21,7 +21,8 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.jdoe = import ./home.nix;
+              # FIXME: Fix username 
+              home-manager.users.USER = import ./home.nix;
               home-manager.extraSpecialArgs = specialArgs;
             }
           ];
